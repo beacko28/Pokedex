@@ -3,7 +3,7 @@ description: Pokédex criada para estudos.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -25,4 +25,4 @@ flutter:
 
     - family : Pokemon
       fonts :
-        - asset: lib/fonts/pokemonSolid.ttf
+        - asset: lib/assets/fonts/pokemonSolid.ttf

@@ -5,7 +5,7 @@ class PokemonModel {
   final int weight;
   final String imageUrl;
   final String type1;
-  final String type2;
+  final String? type2;
   final int health;
   final int attack;
   final int defense;
@@ -13,18 +13,18 @@ class PokemonModel {
   final int basicExperience;
 
   const PokemonModel({
-    this.id,
-    this.height,
-    this.weight,
-    this.name,
-    this.imageUrl,
-    this.type1,
+    required this.id,
+    required this.height,
+    required this.weight,
+    required this.name,
+    required this.imageUrl,
+    required this.type1,
     this.type2,
-    this.health,
-    this.attack,
-    this.defense,
-    this.speed,
-    this.basicExperience,
+    required this.health,
+    required this.attack,
+    required this.defense,
+    required this.speed,
+    required this.basicExperience,
   });
 
   factory PokemonModel.fromMap(Map<String, dynamic> json) {
